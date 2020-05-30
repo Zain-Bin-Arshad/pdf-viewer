@@ -1,3 +1,41 @@
+"""
+This software is available for your use under a MODIFIED LGPL3+ license
+
+This notice, these first 37 lines of code shall remain unchanged
+
+ #     #                                        
+ ##   ##  ####  #####  # ###### # ###### #####  
+ # # # # #    # #    # # #      # #      #    # 
+ #  #  # #    # #    # # #####  # #####  #    # 
+ #     # #    # #    # # #      # #      #    # 
+ #     # #    # #    # # #      # #      #    # 
+ #     #  ####  #####  # #      # ###### #####  
+
+
+888      .d8888b.  8888888b.  888      .d8888b.          
+888     d88P  Y88b 888   Y88b 888     d88P  Y88b         
+888     888    888 888    888 888          .d88P         
+888     888        888   d88P 888         8888"    888   
+888     888  88888 8888888P"  888          "Y8b. 8888888 
+888     888    888 888        888     888    888   888   
+888     Y88b  d88P 888        888     Y88b  d88P         
+88888888 "Y8888P88 888        88888888 "Y8888P"          
+
+
+And just what is that?  Well, it's LPGL3+ and these FOUR simple stipulations.
+1. These and all comments are to remain in this document
+2. You will not post this software in a repository or a location for others to download from:
+   A. Unless you have made 10 lines of changes
+   B. A notice is posted with the code that it is not the original code but instead derived from an original
+3. Forking is OK and does NOT require any changes as long as it is obvious forked and stated on the page
+   where your software is being hosted.  For example, GitHub does a fantastic job of indicating if a repository
+   is the result of a fork.
+4. This software code is only avaiable on github(https://github.com/Zain-Bin-Arshad/PDF-Viewer). 
+   If you've obtained this software in any other way, then those listed here, then SUPPORT WILL NOT BE PROVIDED.
+
+-----------------------------------------------------------------------------------------------------------------
+"""
+
 import os
 import sys
 import fitz
