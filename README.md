@@ -32,6 +32,19 @@ Given command will generate this screen:
 Now, you can open any book and enjoy reading.
 ![pdf](https://user-images.githubusercontent.com/49767636/83328464-a2e90700-a29c-11ea-88ee-7b93689df28a.gif)
 
+## Notes
+Well you can take notes as you go through the book. On the right side there a space for writing anything you want. There is a "Check Box" at the right hand corner make sure that box is checked, only then the note will be saved.
+
+A file name like this "%PDF Filename%_notes.txt" will appear once you close the document. This file will look something like this:
+![note](https://user-images.githubusercontent.com/49767636/83328822-5fdc6300-a29f-11ea-9f1f-374b00184fe3.png)
+
+You can see how easy it is to navigate through this text file and see all the notes.
+
+### Whats special about it?
+Once you have taken the notes, then, whenever you open the same file again, all the notes will appear again with respective to there page number. If you take example of above given screenshot of the notes.txt, when I open the same file again you can see the notes:
+![demonote](https://user-images.githubusercontent.com/49767636/83328967-353eda00-a2a0-11ea-8b01-cf960b719bbb.png)
+
+Make sure you don't delete the text file that is created automatically by the PDFViewer.
 
 ## Language
 I have used "Urdu" language for my application, but don't worry I will be converting the viewer into English and will add some more features also. 
