@@ -30,7 +30,8 @@ Given command will generate this screen:
 
 
 Now, you can open any book and enjoy reading.
-![demo PDFviewer](https://user-images.githubusercontent.com/49767636/83328287-68329f00-a29b-11ea-971d-9019d2ff939c.gif)
+![pdf](https://user-images.githubusercontent.com/49767636/83328464-a2e90700-a29c-11ea-88ee-7b93689df28a.gif)
+
 
 ## Language
 I have used "Urdu" language for my application, but don't worry I will be converting the viewer into English and will add some more features also. 
