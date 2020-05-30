@@ -1,0 +1,3 @@
+PySimpleGUI
+PyMuPDF
+fitz
