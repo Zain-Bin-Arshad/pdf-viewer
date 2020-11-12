@@ -52,7 +52,7 @@ Make sure you don't delete the text file that is created automatically by the PD
 I have used "Urdu" language for my application, but don't worry I will be converting the viewer into English and will add some more features also. 
 
 ## TODO
-Following are some of the tasks that I am working on currently.
+Following are some of the tasks that I am working on currently. (P.S: All of these are completed, I will be pushing the final version very soon)
 
 - Use English throughout the application
 - Add zooming capability
