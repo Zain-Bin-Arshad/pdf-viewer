@@ -30,7 +30,7 @@ And just what is that?  Well, it's LPGL3+ and these FOUR simple stipulations.
 3. Forking is OK and does NOT require any changes as long as it is obvious forked and stated on the page
    where your software is being hosted.  For example, GitHub does a fantastic job of indicating if a repository
    is the result of a fork.
-4. This software code is only avaiable on github(https://github.com/Zain-Bin-Arshad/PDF-Viewer).
+4. This software code is only avaiable on github(https://github.com/Zain-Bin-Arshad/pdf-viewer).
    If you've obtained this software in any other way, then those listed here, then SUPPORT WILL NOT BE PROVIDED.
 
 -----------------------------------------------------------------------------------------------------------------
@@ -152,7 +152,7 @@ class PDFViewer:
         try:
             self.document = fitz.open(self.filename)
         except Exception as ex:
-            self.show_popup('No such file exists')
+            self.show_popup("Sorry this file can't be opened.")
             return
         self.total_pages = len(self.document)
         self.current_page = 0
@@ -260,11 +260,11 @@ class PDFViewer:
         """
         Create the COMPLETE GUI of the application. Interface is divided into rows, nested list containing elements
         is given to the Window() function of PSG. For more information on how its done kindly visit https://pysimplegui.readthedocs.io/en/latest/
-        :return:
+        :return: Nest list containing elements
         """
         menu = [
             ['&File', ['&Open', '---', 'Properties', '&Close']],
-            ['&Help', '...&About'],
+            ['&Help', '&About Developer...'],
         ]
 
         self.tree = sg.Tree(data=self.TOC_tree,
@@ -275,9 +275,9 @@ class PDFViewer:
                             k='-TOC_TREE-',
                             num_rows=30,
                             enable_events=True,
-                            font='Consolas 11 bold',
+                            font='Consolas 12 bold',
                             row_height=40,
-                            tooltip="فہرست",
+                            tooltip="Table of contents",
                             header_font=('Consolas 12 bold'),
                             pad=(0, 0),
                             text_color='black' if self.mode else 'white',
@@ -312,9 +312,9 @@ class PDFViewer:
                          element_justification='center',
                          layout=[
                              [
-                                 self.create_image_btn("OPEN_FILE-", LOGO if self.mode else LOGO_N, 'File Open',
+                                 self.create_image_btn("OPEN_FILE-", LOGO if self.mode else LOGO_N, 'Open file',
                                                        DEF_PAD),
-                                 self.create_image_btn("CLOSE_FILE-", CLOSE if self.mode else CLOSE_N, 'File Close',
+                                 self.create_image_btn("CLOSE_FILE-", CLOSE if self.mode else CLOSE_N, 'Close file',
                                                        DEF_PAD),
                                  self.create_image_btn("MODE-", NIGHT if self.mode else DAY_N, "Day/Night mode"),
 
@@ -391,7 +391,7 @@ class PDFViewer:
                                                                'Next match',
                                                                DEF_PAD),
                                          self.create_image_btn("UP_SEARCH-", SEARCH_UP if self.mode else SEARCH_UP_N,
-                                                               'Previous search', DEF_PAD),
+                                                               'Previous match', DEF_PAD),
                                          sg.BMenu('', ['', ['Whole word', 'Case sensitive']],
                                                   k='-BTN_DOTS-',
                                                   tooltip='Advance search',
@@ -450,11 +450,11 @@ class PDFViewer:
         ]
 
         notes_frame = [
-            [sg.T('Page No# 0',
+            [sg.T('Page # 0',
                   k='-NOTE_PAGENUMBER-',
                   background_color='lightgrey' if self.mode else 'black',
                   text_color='black' if self.mode else 'white',
-                  font="Helvetica 15 bold",
+                  font="Consolas 15 bold",
                   size=(12, 1))
              ],
             [sg.Multiline("",
@@ -521,9 +521,9 @@ class PDFViewer:
         Initializes the GUI and set all settings
         :return: GUI window
         """
-        if self.mode:
-            sg.Window('', [[sg.Image(data=SPLASH_SCREEN)]], transparent_color=sg.theme_background_color(),
-                      no_titlebar=True, keep_on_top=True).read(timeout=1000, close=True)
+        # To add a spsh screen just uncomment this code
+        # if self.mode:
+        # sg.Window('', [[sg.Image(data=SPLASH_SCREEN)]], transparent_color=sg.theme_background_color(), no_titlebar=True, keep_on_top=True).read(timeout=1000, close=True)
 
         title = "{} | PyPDFViewer".format(self.filename, self.total_pages)
         sg.DEFAULT_TOOLTIP_TIME = 10
@@ -531,7 +531,7 @@ class PDFViewer:
             sg.theme('darkgrey4')
             sg.theme_background_color('lightgrey')
         else:
-            sg.theme('DarkGrey8')
+            sg.theme('DarkGrey7')
             sg.theme_background_color('black')
         window = sg.Window(
             title,
@@ -624,7 +624,7 @@ class PDFViewer:
             self.current_page = self.total_pages - 1
         pno = self.current_page + 1
         self.win["-PAGE_NUMBER-"](str(pno))
-        self.win['-NOTE_PAGENUMBER-']('صفحہ نمبر : ' + str(pno))
+        self.win['-NOTE_PAGENUMBER-']('Page # ' + str(pno))
         try:
             page_note = self.notes[pno]
         except KeyError as error:
@@ -896,12 +896,15 @@ class PDFViewer:
         except Exception as e:
             pass
 
-    def close_popup(self):
+    def close_popup(self, text=None):
         """
         Confirms user before closing a file
+        :text: Test to display
         :return: None
         """
-        return sg.popup_yes_no('Do you really want to close this file?',
+        if not text:
+            text = 'Do you really want to close this file?'
+        return sg.popup_yes_no(text,
                                text_color='black',
                                background_color='lightgrey',
                                line_width=50,
@@ -931,7 +934,7 @@ class PDFViewer:
         else:
             val = '100'
             image = FULL_SCREEN if self.mode else FULL_SCREEN_N
-            tooltip = 'Fit to screen'
+            tooltip = 'Fill to width'
 
         self.win['-ZOOM_VAL-'](val)
         self.win['-BTN_WIDTH-'](image_data=image, image_size=(32, 32))
@@ -963,7 +966,7 @@ class PDFViewer:
                     break
                 event = self.Event(evt)
                 if event.quit():
-                    if self.close_popup() == 'Yes':
+                    if self.close_popup("Do you want to close the PDF Viewer?") == 'Yes':
                         self.save_notes_to_file()
                         self.win.close()
                         break
@@ -983,7 +986,7 @@ class PDFViewer:
                             self.filename = new_file
                             self.fill_window()
                         else:
-                            self.show_popup('not file found')
+                            self.show_popup('No file found')
                 elif event.about():
                     wb.open('https://stackoverflow.com/users/11143190/zain-arshad?tab=profile')
                 elif event.custom_search():
@@ -1095,6 +1098,7 @@ class PDFViewer:
         """
         Inner class that handles events
         """
+
         def __init__(self, event):
             self.event = event
 
@@ -1174,7 +1178,7 @@ class PDFViewer:
             return self.event == '-BTN_DOTS-'
 
         def about(self):
-            return self.event == '...About'
+            return self.event == 'About Developer...'
 
         def change_width(self):
             return self.event == '-BTN_WIDTH-'
