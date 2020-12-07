@@ -1,5 +1,5 @@
 # PDF-Viewer
-A **Pure Python PDFViewer**, which provides functionalities same as other famous PDFViewers. Following are the some of main features of this application
+A **Pure Python PDFViewer**, which provides almost all functionalities you want from a PDF reader. Following are the some of main features of this application
 
 - Searching through PDF document
 - Table of contents
@@ -38,7 +38,7 @@ We all just want to search through a document and get things done quickly, well 
 ![search](https://user-images.githubusercontent.com/49767636/101292458-5ffe8200-3831-11eb-8873-71056c39d2e0.gif)
 
 ## Night Mode
-You love reading but your eyes can't see the white screen anymore, switch to night mode. This not only make application black but converts the PDF to black background and white text so that your eyes can relax.
+You want to read more but your eyes can't see the white screen anymore, switch to night mode. This not only updates the application's theme,  but converts the PDF to black background and white text so that your eyes can relax.
 ![night](https://user-images.githubusercontent.com/49767636/101292512-b966b100-3831-11eb-8ed5-8ab291b6b645.jpg)
 
 ## Notes
@@ -59,10 +59,10 @@ Once you have taken the notes, then, whenever you open the same file again, all 
 Make sure you don't delete the text file that is created automatically by the PDFViewer.
 
 ## Buy me a coffee
-If you like my effort and want to this project to move forward, you can support this project buy using the `Sponser`. Every geenrous help is much appreciated.
+If you like my effort and want this project to move forward, you can support this project by using the `Sponser` button above. Every geenrous help is much appreciated.
 
 ## Pythonic Code
-This code is not as much pythonic as I want it to be, but as it was made at nights out of my own will, so this is what it is. I might take 1-2 days out of my schedule to refactor this code base so anyone using this code don't want to kill me, hahaa.
+This code is not as much pythonic as I want it to be, but I had just enough time and resources to get this done, so this is what it is. I might take 1-2 days out of my schedule to refactor this code base so anyone using this code don't want to kill me, hahaa.
 
 ## Special Thanks
 I want to thanks [PySimpleGUI](https://github.com/PySimpleGUI/PySimpleGUI) for developing such a great GUI-Framework in python.
