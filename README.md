@@ -59,7 +59,7 @@ Once you have taken the notes, then, whenever you open the same file again, all 
 Make sure you don't delete the text file that is created automatically by the PDFViewer.
 
 ## Buy me a coffee
-If you like my effort and want this project to move forward, you can support this project by using the `Sponser` button above. Every geenrous help is much appreciated.
+If you like my effort and want this project to move forward, you can support this project by using the `Sponser` button above. Every generous help is much appreciated.
 
 ## Pythonic Code
 This code is not as much pythonic as I want it to be, but I had just enough time and resources to get this done, so this is what it is. I might take 1-2 days out of my schedule to refactor this code base so anyone using this code don't want to kill me, hahaa.
