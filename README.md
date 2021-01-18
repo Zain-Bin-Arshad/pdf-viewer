@@ -6,7 +6,7 @@ A **Pure Python PDFViewer**, which provides almost all functionalities you want 
 - Take notes and save them automatically
 - Night mode for taking care of your eyes
 - Zooming feature
-- Developed in pure python
+- Developed in pure python (python-3.7.4)
 
 ## Why bother creating new PDF Viewer?
 I wanted to create an application that requires me to have a PDF Viewer with access to the source code, in python. I searched the internet for a PDF Viewer written in Python, but all in vain. I couldn't find any reasonable result.
