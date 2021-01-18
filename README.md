@@ -36,7 +36,7 @@ Now, you can open any book and enjoy reading.
 ## Searching
 We all just want to search through a document and get things done quickly, well I got your back. Keep searching using this advanced user-friendly search feature.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/49767636/101292458-5ffe8200-3831-11eb-8873-71056c39d2e0.gif" alt="animated" width="1500" height="480"/>
+  <img src="https://user-images.githubusercontent.com/49767636/101292458-5ffe8200-3831-11eb-8873-71056c39d2e0.gif" alt="animated" width="1500" height="490"/>
 </p>
 
 ## Night Mode
