@@ -35,8 +35,9 @@ Now, you can open any book and enjoy reading.
 
 ## Searching
 We all just want to search through a document and get things done quickly, well I got your back. Keep searching using this advanced user-friendly search feature.
-
-![search](https://user-images.githubusercontent.com/49767636/101292458-5ffe8200-3831-11eb-8873-71056c39d2e0.gif)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/49767636/101292458-5ffe8200-3831-11eb-8873-71056c39d2e0.gif" alt="animated" />
+</p>
 
 ## Night Mode
 You want to read more but your eyes can't see the white screen anymore, switch to night mode. This not only updates the application's theme,  but converts the PDF to black background and white text so that your eyes can relax.
@@ -46,16 +47,17 @@ You want to read more but your eyes can't see the white screen anymore, switch t
 Well you can take notes as you go through the book. On the right side there a space for writing anything you want. There is a "Check Box" at the right hand corner make sure that box is checked, only then the note will be saved.
 
 A file name like this "%PDF Filename%_notes.txt" will appear once you close the document. This file will look something like this:
-
-![demo note](https://user-images.githubusercontent.com/49767636/101292682-e10a4900-3832-11eb-9b54-c63708c7c1d6.jpg)
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/49767636/101292682-e10a4900-3832-11eb-9b54-c63708c7c1d6.jpg" alt="animated" />
+</p>
 
 You can see how easy it is to navigate through this text file and see all the notes.
 
 ### What's so special about it?
 Once you have taken the notes, then, whenever you open the same file again, all the notes will appear again with respective to there page number. If you take example of above given screenshot of the notes.txt, when I open the same file again you can see the notes:
-![auto](https://user-images.githubusercontent.com/49767636/101292715-0d25ca00-3833-11eb-815c-1d4f73cd271f.jpg)
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/49767636/101292715-0d25ca00-3833-11eb-815c-1d4f73cd271f.jpg" alt="animated" />
+</p>
 
 Make sure you don't delete the text file that is created automatically by the PDFViewer.
 
