@@ -35,9 +35,8 @@ Now, you can open any book and enjoy reading.
 
 ## Searching
 We all just want to search through a document and get things done quickly, well I got your back. Keep searching using this advanced user-friendly search feature.
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/49767636/101292458-5ffe8200-3831-11eb-8873-71056c39d2e0.gif" alt="animated" width="1500" height="490"/>
-</p>
+
+![1](https://user-images.githubusercontent.com/49767636/101292458-5ffe8200-3831-11eb-8873-71056c39d2e0.gif)
 
 ## Night Mode
 You want to read more but your eyes can't see the white screen anymore, switch to night mode. This not only updates the application's theme,  but converts the PDF to black background and white text so that your eyes can relax.
