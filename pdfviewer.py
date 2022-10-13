@@ -162,7 +162,7 @@ class PDFViewer:
         self.annotated_pages = []
         self.image_data = self.get_page_data(self.current_page)
         self.TOC_tree = sg.TreeData()
-        toc = self.document.getToC()
+        toc = self.document.get_toc()
         if toc:
             self.create_toc(toc, "", toc[0][0])
 
@@ -562,9 +562,9 @@ class PDFViewer:
         page = self.annotated_pages[required_page] if annotation else self.pages[required_page]
         if not page:
             if annotation:
-                page = self.annotated_pages[required_page] = self.document[required_page].getDisplayList()
+                page = self.annotated_pages[required_page] = self.document[required_page].get_displaylist()
             else:
-                page = self.pages[required_page] = self.document[required_page].getDisplayList()
+                page = self.pages[required_page] = self.document[required_page].get_displaylist()
         size = page.rect
         if self.full_width:
             mat = self.max_page_size[0] / size.width
@@ -575,10 +575,10 @@ class PDFViewer:
                 mat = self.max_page_size[1] / size.height
 
         zoom_mat = fitz.Matrix(mat, mat)
-        pix = page.getPixmap(matrix=zoom_mat, alpha=False)
+        pix = page.get_pixmap(matrix=zoom_mat, alpha=False)
         if not self.mode:
-            pix.invertIRect()
-        return pix.getPNGData(), pix.width, pix.height
+            pix.invert_irect()
+        return pix.tobytes(), pix.width, pix.height
 
     def show_search_pages(self):
         """
@@ -664,7 +664,7 @@ class PDFViewer:
         total_matches = 0
         for page in self.document:
             insert_page = True
-            words = page.getTextWords()
+            words = page.get_text_words()
             if words:
                 for word in words:
                     if self.custom_search_option == 'simple':
@@ -681,7 +681,7 @@ class PDFViewer:
                             insert_page = False
                         total_matches += 1
                         area = fitz.Rect(word[:4])
-                        self.annotated_pages[-1].addHighlightAnnot(area)
+                        self.annotated_pages[-1].add_highlight_annot(area)
         self.update_match_status(total_matches)
         window.write_event_value('-THREAD_DONE-', total_matches)
 
@@ -733,11 +733,11 @@ class PDFViewer:
         :return: None
         """
         blue = (0.6784313725490196, 0.8470588235294118, 0.9019607843137255)
-        cur_annot.setColors(stroke=blue)
+        cur_annot.set_colors(stroke=blue)
         cur_annot.update()
         if perv_annot and perv_annot.xref != cur_annot.xref:
             yellow = (1, 1, 0)
-            perv_annot.setColors(stroke=yellow)
+            perv_annot.set_colors(stroke=yellow)
             perv_annot.update()
 
     def search_up(self):
