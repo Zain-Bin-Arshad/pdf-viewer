@@ -1,5 +1,5 @@
 # PDF-Viewer
-**Warning**: This project is not being maintained currently. when I developed this project I had a week or so at my disposal, moreover, PySimpleGUI was in the early stages when this project was developed and might have updates that can simplify various code chunks. I am trying to allocate some time to update the code to the latest Python and PySimpleGUI versions, however, this should still serve your purpose.
+**Warning**: This project is not being maintained currently. when I developed this project I had a week or so at my disposal, PySimpleGUI was in the early stages and might have updates that can simplify various code chunks. I am trying to allocate some time to update the code to the latest Python and PySimpleGUI versions, however, this should still serve your purpose.
 <hr style="hieght: 0.05em">
 A <b>Pure Python PDFViewer</b>, which provides almost all the functionalities you want from a PDF reader. Following are the some of main features of this application
 
