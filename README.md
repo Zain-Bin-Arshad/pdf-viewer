@@ -47,7 +47,7 @@ If you want to read more but your eyes can't see the white screen anymore, switc
 ## Notes
 Well, you can take notes as you go through the book. On the right side, there is a space for writing anything you want. There is a "Check Box" at the right-hand corner make sure that box is checked, only then will the note be saved.
 
-A file name like this "%PDF Filename%_notes.txt" will appear once you close the document. This file will look something like this:
+A file name like "%PDF Filename%_notes.txt" will appear once you close the document. This file will look something like this:
 <p align="center">
   <img src="https://user-images.githubusercontent.com/49767636/101292682-e10a4900-3832-11eb-9b54-c63708c7c1d6.jpg" alt="animated" />
 </p>
@@ -55,7 +55,7 @@ A file name like this "%PDF Filename%_notes.txt" will appear once you close the 
 You can see how easy it is to navigate through this text file and see all the notes.
 
 ### What's so special about it?
-Once you have taken the notes, then, whenever you open the same file again, all the notes will appear again with respect to there page number. If you take the example of the above-given screenshot of the notes.txt, when I open the same file again you can see the notes:
+Once you have taken the notes, then, whenever you open the same file again, all the notes will appear again concerning their page number. If you take the example of the above-given screenshot of the notes.txt, when I open the same file again you can see the notes:
 <p align="center">
   <img src="https://user-images.githubusercontent.com/49767636/101292715-0d25ca00-3833-11eb-815c-1d4f73cd271f.jpg" alt="animated" />
 </p>
@@ -63,10 +63,10 @@ Once you have taken the notes, then, whenever you open the same file again, all 
 Make sure you don't delete the text file that is created automatically by the PDFViewer.
 
 ## Buy me a coffee
-If you like my effort and want this project to move forward, you can support this project by using the `Sponsor` button above. Your generous help is much appreciated.
+If you like my effort and want this project to move forward, you can support this project by using the `Sponsor` button above. I appreciate your generous help.
 
 ## Pythonic Code
-This code is not as pythonic as I want it to be, but I had just enough time and resources to get this done, so this is what it is. I might take 1-2 days out of my schedule to refactor this code base so anyone using this code doesn't want to kill me, hahaha.
+This code is not as Pythonic as I want it to be, but I had just enough time and resources to get this done, so this is what it is. I might take 1-2 days out of my schedule to refactor this code base.
 
 ## Special Thanks
 I want to thank [PySimpleGUI](https://github.com/PySimpleGUI/PySimpleGUI) for developing such a great GUI-Framework in Python.
